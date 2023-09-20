@@ -8,9 +8,9 @@ import ClipboardComponent from "./ClipboardComponent"
 
 class CopyToClipboard extends StreamlitComponentBase {
   public render = (): ReactNode => {
-    const name = this.props.args["name"]
+    const text = this.props.args["text"]
     return (
-      <ClipboardComponent text={name} />
+      <ClipboardComponent text={text} />
     )
   }
 }
