@@ -1,14 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import MyComponent from "./MyComponent"
-import ClipboardComponent from "./ClipboardComponent"
+import CopyToClipboard from "./CopyToClipboard"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <p className="lastAnswer">(Antwort aus dem Chat)</p>
-    <ClipboardComponent cssSelector=".lastAnswer" />
-    <MyComponent />
+    <CopyToClipboard />
   </React.StrictMode>,
   document.getElementById("root")
 )
